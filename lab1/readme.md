@@ -5,18 +5,13 @@ int p = 0, memory = 10;
 ```
 
 ```c
-## Array Decleration
-int array[10];
-```
-
-```c
-## Array Initialization
+## Array Decleration or Initialization
 int array[10] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 ```
 
 ```c
 ## Array Elements Insertion (User Input)
-    for(p = 0; p<memory; p++)
+for(p = 0; p<memory; p++)
     {
         scanf("%d ",&array[p]);
     }
@@ -24,11 +19,12 @@ int array[10] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 
 ```c
 ## Print The Array Elements
-    for(p = 0; p<memory; p++)
+for(p = 0; p<memory; p++)
     {
         printf("%d ", array[p]);
     }
 ```
+
 ```c
 ## Array Reversing
 for(p = memory-1; p>=0; p--)
