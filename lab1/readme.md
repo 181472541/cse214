@@ -9,7 +9,7 @@ int p = 0, memory = 10;
 int array[10] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
 ```
 
-## Array Elements Insertion (User Input)
+## [Array Elements Insertion (User Input)](../lab1/1.c)
 ```c
 for(p = 0; p<memory; p++)
     {
@@ -17,7 +17,7 @@ for(p = 0; p<memory; p++)
     }
 ```
 
-## Print The Array Elements
+## [Print The Array Elements](../lab1/5.c)
 ```c
 for(p = 0; p<memory; p++)
     {
@@ -33,7 +33,7 @@ for(p = memory-1; p>=0; p--)
     }
 ```
 
-## Array Access
+## [Array Access](../lab1/3.c)
 ```c
 if (index_value > index_size)
 printf("Overflow"); //The index location is not available. 
