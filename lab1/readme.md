@@ -25,7 +25,7 @@ for(p = 0; p<memory; p++)
     }
 ```
 
-## [Array Reversing](../lab1/7.c)
+## <style color="Black">[Array Reversing](../lab1/7.c)</style>
 ```c
 for(p = memory-1; p>=0; p--)
     {
