@@ -1,4 +1,4 @@
-# cse213
+# cse214
 
 ## Lab Assignment 1
 * Array Declaretion 
