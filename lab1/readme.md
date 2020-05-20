@@ -23,7 +23,7 @@ for(p = 0; p<memory; p++)
     }
 ```
 
-## <div class="text-black">[Print The Array Elements](../lab1/5.c)</div>
+## [Print The Array Elements](../lab1/5.c)
 ```c
 /*for ( initialize ; condition; increment ) {
    printf statement(s);
