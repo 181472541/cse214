@@ -69,7 +69,7 @@ if(p>100)
 ```c
 /*while(Conditions){
 Statements;
-}
+}*/
 
 //Implement in Program
 
@@ -77,7 +77,9 @@ while(scanf("%d",&array[p]) != EOF)
     {
         p++;
     }
+    
     // or
+    
 while(scanf("%d",&array[p]) == 1)
     {
         p++;
