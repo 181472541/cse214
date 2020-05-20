@@ -25,7 +25,7 @@ for(p = 0; p<memory; p++)
     }
 ```
 
-## <style color="Black">[Array Reversing](../lab1/7.c)</style>
+## [Array Reversing](../lab1/7.c)
 ```c
 for(p = memory-1; p>=0; p--)
     {
@@ -39,7 +39,7 @@ if (index_value > index_size)
 printf("Overflow"); //The index location is not available. 
 ```
 
-## End of File
+## [End of File](../lab1/2.c)
 ```c
 while(scanf("%d",&array[p]) != EOF)
     {
