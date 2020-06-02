@@ -39,10 +39,10 @@ a[K - 1] = X;
 
 ## [Update Index with Another Value ](../lab2/5.c)
 ```c
-    for (i=0; i==K; i++)
+for (i=0; i==K; i++)
         a[i] = a[i - 1];
 
-    a[K - 1] = X;
+a[K - 1] = X;
 ```
 
 ## [Update Index with Another Value in a Correct Position or Index ](../lab2/6.c)
