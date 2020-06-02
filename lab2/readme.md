@@ -23,6 +23,7 @@ for(i=0; i<size; i++)
 ```
 
 ## [Insert Value in Array](../lab2/4.c)
+```c
 //Insert Value
 scanf("%d", &X);
 
@@ -35,5 +36,6 @@ for (i=size; i>=K; i--)
 size++;
 
 a[K - 1] = X;
+```
 
 ## [Update Index with Another Value ](../lab2/5.c)
