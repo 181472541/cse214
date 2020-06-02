@@ -1,13 +1,17 @@
-/*  Delete a value �X� (take input X from user) from
-    the array shift all other value to left. If �X�
+/*  Delete a value “X” (take input X from user) from
+    the array shift all other value to left. If “X”
     is not present in the given array print Element
     Not Found. Only delete the first occurrence of
     the value. And print the whole array */
 
+/* Delete a value “X” (take input X from user) from the array shift all other
+value to left.If “X” is not present in the given array print Element Not Found.
+Only delete the first occurrence of the value. And print the whole array */
+
 #include<stdio.h>
 int main ()
 {
-    int array[100]= {1,2,3,4,5,6,7,8,9,10};
+    int array[100]= {1,4,3,4,5,6,4,8,9,10};
     int i, j, X;
     int tag=0;
     int size=10;
@@ -20,15 +24,16 @@ int main ()
 //Insert Value
     scanf("%d",&X);
 
-    for(j=0; j<size; j++)
+    for(i=0; i<size; i++)
     {
-        if(X==array[j])
+        if(X==array[i])
         {
-            for(i=X-1; i<=size; i++)
+            for(j=i; j<=size; j++)
             {
-                array[i] = array[i+1];
+                array[j] = array[j+1];
             }
             tag++;
+            break;
         }
     }
 
