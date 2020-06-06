@@ -29,22 +29,22 @@ int array[100] = {73, 80, 8, 40, 33, 57, 70, 92, 99, 85};
 
 ```
 
-## [Calculate the Summation of Given Array](../lab3/5.c)
+## [Summation of Given Array](../lab3/5.c)
 ```c
 
 ```
 
-## [Calculate the Average of Given Array](../lab3/6.c)
+## [Average of Given Array](../lab3/6.c)
 ```c
 
 ```
 
-## [Calculate Standard Deviation of Given Array](../lab3/7.c)
+## [Calculate Standard Deviation](../lab3/7.c)
 ```c
 
 ```
 
-## [Calculate First 92 Fibonacci Numbers](../lab3/8.c)
+## [First 92 Fibonacci Numbers](../lab3/8.c)
 ```c
 
 ```
