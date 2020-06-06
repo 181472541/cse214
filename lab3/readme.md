@@ -1,8 +1,8 @@
 ## [Variable Decleration](../lab3/7.c)
 ```c
-int i, max, max, max_2nd, min_2nd;
+int i, max, min, max_2nd, min_2nd;
 double sum = 0, avg = 0, variance = 0;
-int size = 10,  = 0;
+int size = 10;
 ```
 ## [Array Decleration or Initialization](../lab3/1.c)
 ```c
@@ -11,21 +11,22 @@ int array[100] = {73, 80, 8, 40, 33, 57, 70, 92, 99, 85};
 
 ## [Find Maximum](../lab3/1.c)
 ```c
-max = array[0];
+max = array[0]; // Lets Take any one value from given array as a maximum
 for(i=0; i<size; i++)
     {
-        if(array[i]>max)
+        if(array[i]>max) // Any index value are greater from maximum
             max = array[i];
     }
 ```
 
 ## [Find Minimum](../lab3/2.c)
 ```c
-min = array[0];
+min = array[0]; // Lets Take any one value from given array as a minimum
 for(i=0; i<size; i++)
     {
-        if(array[i]<min)
-            min = array[i];
+        if(array[i]>max)  
+            if(array[i]<min) // Any index value are less then from maximum
+                min = array[i];
     }
 ```
 
