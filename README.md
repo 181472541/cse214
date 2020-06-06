@@ -11,3 +11,11 @@
 * Array Update
 * Array Search
 * Array Delete
+
+## [Lab Assignment 3](lab3)
+* Maximum 
+* Minimum
+* Summation
+* Average
+* Standard Deviation
+* Fibonacci Number
