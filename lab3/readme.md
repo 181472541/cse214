@@ -63,22 +63,22 @@ for(i=0; i<size; i++)
 ## [Summation of Given Array](../lab3/5.c)
 ```c
 for(i=0; i<size; i++)
-        sum += array[i];
+        sum += array[i]; // Adds all values in given array
 ```
 
 ## [Average of Given Array](../lab3/6.c)
 ```c
 for(i=0; i<size; i++)
         sum += array[i];
-    avg = sum/size;
+    avg = sum/size; // Adds all values and divides by array size for average
 ```
 
-## [Calculate Standard Deviation](../lab3/7.c)
+## [Calculate Standard Deviation (For Non-Grouped Data)](../lab3/7.c)
 ```c
 for(i=0; i<size; i++)
-        variance += pow(array[i]-avg,2);
+        variance += pow(array[i]-avg,2); // For each number: Subtract the Mean and square the result 
 
-variance = sqrt(variance/10);
+variance = sqrt(variance/10); // 
 ```
 
 ## [First 92 Fibonacci Numbers](../lab3/8.c)
@@ -87,5 +87,5 @@ array[0] = 0;
 array[1] = 1;
 
 for(i=2; i<size; i++)
-        array[i] = array[i-1] + array[i-2];
+        array[i] = array[i-1] + array[i-2]; // The sum of the two preceding numbers 
 ```
