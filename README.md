@@ -25,6 +25,5 @@
 * Array Reverse
 * Array Compare
 * Array Merge
-* Array Smilt
-* Array Cyclically
-* Array Permute
+* Array Spilt
+* Cyclically Permute
