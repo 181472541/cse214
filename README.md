@@ -19,3 +19,12 @@
 * Average
 * Standard Deviation
 * Fibonacci Number
+
+## [Lab Assignment 4](lab4)
+* Array Copy
+* Array Reverse
+* Array Compare
+* Array Merge
+* Array Smilt
+* Array Cyclically
+* Array Permute
