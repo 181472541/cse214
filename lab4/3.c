@@ -11,16 +11,11 @@ int main()
         printf("%d ",array[i]);
 
     printf("\n");
-    j = 0;
-    i = size - 1;
-    while(j<i)
-    {
+
+    for(i=size-1, j=0; j<i; i--, j++){
         tag = array[j];
         array[j] = array[i];
         array[i] = tag;
-
-        j++;
-        i--;
     }
 
     for(i=0; i<size; i++)
@@ -28,3 +23,4 @@ int main()
 
     return 0;
 }
+
