@@ -21,11 +21,7 @@ int main()
     size = size1 + size2;
 
     for(i=size1, j=0; i<=size; i++,j++)
-    {
-        size1++;
         array1[i]=array2[j];
-
-    }
 
     printf("\n");
 
