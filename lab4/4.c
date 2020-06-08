@@ -23,16 +23,12 @@ int main()
     {
         if(array1[i]==array2[i])
             same++;
-        else
-            notSame++;
     }
 
     if(same==size)
-        printf("\n\n>>> Two array are same <<<\n");
-    else if(notSame==size)
-        printf("\n\n>>> Two array are not same <<<\n");
+        printf("\n\nTwo array are same\n");
     else
-        printf("\n\n>>> Two array are not same <<<\n");
+        printf("\n\nTwo array are not same\n");
 
     return 0;
 }
