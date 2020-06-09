@@ -26,7 +26,6 @@ int array2[100] = {10, 5, 20, 12, 16, 13, 17, 3, 6, 9};
 ## [Print the Array Using Pointer (Untill Input 0)](../lab5/3.c)
 ```c
 
-    }
 ```
 
 ## [Print the Array Using Pointer (Separated by Space)](../lab5/4.c)
@@ -76,7 +75,6 @@ int array2[100] = {10, 5, 20, 12, 16, 13, 17, 3, 6, 9};
 ## [Summation of Array Using Pointer](../lab5/13.c)
 ```c
 
-    }
 ```
 
 ## [Copy an Array to Another Array Using Pointer](../lab5/14.c)
