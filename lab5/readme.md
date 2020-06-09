@@ -1,7 +1,3 @@
-```c
-// Note: All the Problem solved Using Pointer
-```
-
 ## [Variable Decleration](../lab5/)
 ```c
 int i, j;
