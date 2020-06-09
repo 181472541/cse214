@@ -1,16 +1,25 @@
 ## [Variable Decleration](../lab5/)
 ```c
-int i, j;
+int tag = 0;
+int i, j, X, K, location;
 int size = 10; // For array[100]
 int size1 = 10; // For array1[100]
 int size2 = 10; // For array2[100]
-int tag = 0;
 ```
+
 ## [Array Decleration or Initialization](../lab5/)
 ```c
 int array[100] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
 int array1[100] = {8, 2, 18, 19, 11, 14, 15, 7, 1, 4};
 int array2[100] = {10, 5, 20, 12, 16, 13, 17, 3, 6, 9};
+```
+
+## [Pointer Decleration or Initialization](../lab5/)
+```c
+int *p, *q, *r;
+p = &array[0];
+q = &array1[0];
+r = &array2[0];
 ```
 
 ## [Print the Array Using Pointer](../lab5/1.c)
