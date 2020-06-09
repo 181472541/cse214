@@ -29,4 +29,4 @@
 * Cyclically Permute
 
 ## [Lab Assignment 5](lab5)
-* Array Operation using Pointer
+* Array Operation Using Pointer
