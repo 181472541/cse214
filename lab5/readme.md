@@ -2,8 +2,8 @@
 ```c
 int tag = 0;
 int same = 0;
-int max_2nd, min_2nd;
 int i, j, X, K, location;
+int max, max_2nd, min, min_2nd;
 int size = 10; // For array[100]
 int size1 = 10; // For array1[100]
 int size2 = 10; // For array2[100]
