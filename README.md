@@ -1,4 +1,4 @@
-# cse214
+# Data Structure CSE - 214
 
 ## [Lab Assignment 1](lab1)
 * Array Declaretion 
