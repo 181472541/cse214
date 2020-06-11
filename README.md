@@ -29,7 +29,7 @@
 * Cyclically Permute
 
 ## [Lab Assignment 5](lab5)
-#Array Operation Using Pointer
+#[Array Operation Using Pointer]
 * Array Declaration
 * Array Initialization 
 * Array Accessing 
