@@ -1,14 +1,3 @@
-## [Variable Decleration](../lab3/7.c)
-```c
-int i, max, min, max_2nd, min_2nd;
-double sum = 0, avg = 0, variance = 0;
-int size = 10;
-```
-## [Array Decleration or Initialization](../lab3/1.c)
-```c
-int array[100] = {73, 80, 8, 40, 33, 57, 70, 92, 99, 85};
-```
-
 ## [Find Maximum](../lab3/1.c)
 ```c
 max = array[0]; // Lets Take any one value from given array as a maximum
