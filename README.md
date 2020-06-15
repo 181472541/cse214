@@ -30,7 +30,7 @@
 
 ## [Lab Assignment 5](lab5)
 * Array Operation Using Pointer
-  -Array Declaration
+  - Array Declaration
   - Array Initialization 
   - Array Accessing 
   - Array I/O 
