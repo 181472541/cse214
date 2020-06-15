@@ -1,27 +1,31 @@
-## [Variable Decleration](../lab2/1.c)
+## [Insert Value in any Index](../lab2/1.c)
 ```c
-int i, j;
-int X; // Where X is Value
-int K; // Where K is Position or Index
-int size = 10, tag = 0;
-```
-## [Array Decleration or Initialization](../lab2/2.c)
-```c
-int array[100] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
-```
-
-## [Print The Array Elements](../lab2/3.c)
-```c
-/*for ( initialize ; condition; increment ) {
-   printf statement(s);
-}*/
-
-//Implement in Program
 for(i=0; i<size; i++)
         printf("%d ", a[i]);
+        
+a[9] = X;
 ```
 
-## [Insert Value in Array](../lab2/4.c)
+## [Insert Value in End of The Array](../lab2/2.c)
+```c
+scanf("%d", &X);
+a[size] = X;
+size++;
+```
+
+## [Insert Value in any Index and Shift all Other Value to Right](../lab2/3.c)
+```c
+//Insert Value
+scanf("%d", &X);
+
+for (i=size; i>=K; i--)
+        a[i] = a[i - 1];
+        
+size++;
+a[K - 1] = X;
+```
+
+## [Insert Value in any Index from User and Shift all Other Value to Right](../lab2/4.c)
 ```c
 //Insert Value
 scanf("%d", &X);
@@ -31,13 +35,12 @@ scanf("%d", &K);
 
 for (i=size; i>=K; i--)
         a[i] = a[i - 1];
-        
-size++;
 
+size++;
 a[K - 1] = X;
 ```
 
-## [Update Index with Another Value ](../lab2/5.c)
+## [Update value in Index with Another Value](../lab2/5.c)
 ```c
 for (i=0; i==K; i++)
         a[i] = a[i - 1];
@@ -45,7 +48,7 @@ for (i=0; i==K; i++)
 a[K - 1] = X;
 ```
 
-## [Update Index with Another Value in a Correct Position or Index ](../lab2/6.c)
+## [Update value in Index with Another Value (Take Index from User)](../lab2/6.c)
 ```c
 //Insert Position
 scanf("%d", &K);
@@ -76,7 +79,7 @@ if(tag!=1)
    printf("-1");
 ```
 
-## [Delete a Value in Array](../lab2/9.c)
+## [Delete a Value in Array (Take Index from User)](../lab2/9.c)
 ```c
 //Insert Position
 scanf("%d", &K);
