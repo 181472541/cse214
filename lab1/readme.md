@@ -1,14 +1,3 @@
-## [Variable Decleration](../lab1/6.c)
-```c
-int N;
-int p = 0, memory = 10;
-```
-
-## [Array Decleration or Initialization](../lab1/4.c)
-```c
-int array[10] = {1, 2, 3, 4, 5, 6, 7,8, 9, 10};
-```
-
 ## [Array Elements Insertion (User Input)](../lab1/1.c)
 ```c
 /*for ( initialize ; condition; increment ) {
