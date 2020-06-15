@@ -14,7 +14,7 @@ else
 
 ## [Take Array Elements from User Until EOF](../lab1/2.c)
 ```c
-    while(scanf("%d",&array[p]) != EOF)
+while(scanf("%d",&array[p]) != EOF)
     {
         p++;
         if(p+1>100)
@@ -44,7 +44,7 @@ while(scanf("%d",&array[p]) != EOF)
         }
     }
 ```
-## [Print each Element in Newline](../lab1/4.c)
+## [Print Each Element in Newline](../lab1/4.c)
 ```c
 for(p = 0; p<memory; p++)
         printf("%d\n", array[p]);
