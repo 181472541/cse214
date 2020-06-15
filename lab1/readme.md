@@ -1,76 +1,75 @@
-## [Array Elements Insertion (User Input)](../lab1/1.c)
+## [Take Array Elements from User](../lab1/1.c)
 ```c
-/*for ( initialize ; condition; increment ) {
-   scanf statement(s);
-}*/
-
-//Implement in Program
-
-for(p = 0; p<memory; p++)
+scanf("%d",&N);
+if(N>100)
+        printf("Overflow");
+else  
     {
-        scanf("%d ",&array[p]);
+        for(p = 0; p<N; p++)
+        {
+            scanf("%d",&array[p]);
+        }
     }
 ```
 
-## [Print The Array Elements](../lab1/5.c)
+## [Take Array Elements from User Until EOF](../lab1/2.c)
 ```c
-/*for ( initialize ; condition; increment ) {
-   printf statement(s);
-}*/
-
-//Implement in Program
-
-for(p = 0; p<memory; p++)
+    while(scanf("%d",&array[p]) != EOF)
     {
-        printf("%d ", array[p]);
-    }
-```
-
-## [Array Reversing](../lab1/7.c)
-```c
-/*for ( initialize ; condition; Decrement ) {
-   printf statement(s);
-}*/
-
-//Implement in Program
-
-for(p = memory-1; p>=0; p--)
-    {
-        printf("%d ", array[p]);
-    }
-```
-
-## [Array Access](../lab1/3.c)
-```c
-/*if (index_value > index_size)
-printf("Overflow"); //The index location is not available.*/
-
-//Implement in Program
-
-if(p>100)
+        p++;
+        if(p+1>100)
         {
             printf("Overflow");
             break;
         }
+    }
 ```
 
-## [End of File](../lab1/2.c)
+## [Take Array Elements from User Until Input is ZERO](../lab1/3.c)
 ```c
-/*while(Conditions){
-Statements;
-}*/
-
-//Implement in Program
-
 while(scanf("%d",&array[p]) != EOF)
     {
-        p++;
+        if(0 == array[p])
+        {
+            break;
+        }
+        if(p>100)
+        {
+            printf("Overflow");
+            break;
+        }
+        else
+        {
+            p++;
+        }
     }
-    
-    // or
-    
-while(scanf("%d",&array[p]) == 1)
+```
+## [Print each Element in Newline](../lab1/4.c)
+```c
+for(p = 0; p<memory; p++)
+        printf("%d\n", array[p]);
+```
+
+## [Print each Element Separated by Space](../lab1/5.c)
+```c
+for(p = 0; p<memory; p++)
+        printf("%d ", array[p]);
+```
+
+## [Print each Element Separated by Comma](../lab1/6.c)
+```c
+for(p = 0; p<memory; p++)
     {
-        p++;
+        printf("%d", array[p]);
+        if(p<=memory-2)
+        {
+            printf(", ");
+        }
     }
+```
+
+## [Print Array Elements in Reverse and Separated by Space](../lab1/7.c)
+```c
+    for(p = memory-1; p>=0; p--)
+        printf("%d ", array[p]);
 ```
