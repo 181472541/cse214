@@ -1,18 +1,3 @@
-## [Variable Decleration](../lab4/6.c)
-```c
-int i, j;
-int size = 10; // For array[100]
-int size1 = 10; // For array1[100]
-int size2 = 10; // For array2[100]
-int tag = 0;
-```
-## [Array Decleration or Initialization](../lab4/6.c)
-```c
-int array[100] = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-int array1[100] = {8, 2, 18, 19, 11, 14, 15, 7, 1, 4};
-int array2[100] = {10, 5, 20, 12, 16, 13, 17, 3, 6, 9};
-```
-
 ## [Copy an Array Into Another Array](../lab4/1.c)
 ```c
 for(i=0; i<size; i++)
