@@ -50,11 +50,16 @@ struct node
 
 ## [Print Address, Value, and Next Address (Without function and DMA](../lab6/2.c)
 ```c
-// Structure  Declaration
-// struct Structure_Name Variable_Name;
-
-    struct node p, q, r;
-    struct node *head = NULL;
+    typedef struct node
+    {
+        int value;
+        struct node *next;
+    } Node;
+    
+// print Link List
+    p.value = 10; // Value Assign
+    p.next = &q; // Find Next Address
+    printf("%p \t %d \t %p\n", &p, p.value, p.next); // Print Node
 ```
 
 ## [Linked List Initialize](../lab6/3.c)
