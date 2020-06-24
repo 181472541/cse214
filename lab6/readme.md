@@ -48,7 +48,7 @@ struct node
     printf("%p \t %d \t %p\n", &p, p.value, p.next); // Print Node
 ```
 
-## [Print Address, Value, and Next Address (Without function and DMA](../lab6/2.c)
+## [Print Address, Value, and Next Address (Without function and DMA)](../lab6/2.c)
 ```c
     typedef struct node
     {
@@ -62,24 +62,69 @@ struct node
     printf("%p \t %d \t %p\n", &p, p.value, p.next); // Print Node
 ```
 
-## [Linked List Initialize](../lab6/3.c)
+## [Display the Complete Linked List using Function (Without DMA)](../lab6/3.c)
 ```c
-// Variable_Name.Member_Name = Value
-
-  p.value = 10;
+void print_link_list(Node *temp)
+{
+    while(temp!=NULL)
+    {
+        printf("%d ",temp->value);
+        temp = temp->next;
+    }
+}
 ```
 
-## [Access Linked List](../lab6/4.c)
+## [Display the Complete Linked List using DMA and Check Empty List](../lab6/4.c)
 ```c
+    print_link_list(head);
 
+    p = (Node *) malloc(sizeof(Node));
+    q = (Node *) malloc(sizeof(Node));
+    r = (Node *) malloc(sizeof(Node));
+    
+    void print_link_list(Node *temp)
+{
+    if(temp==NULL)
+    {
+        printf("Empty List\n");
+        return;
+    }
+    while(temp!=NULL)
+    {
+        printf("%d ",temp->value);
+        temp = temp->next;
+    }
+    printf("\n");
+}
 ```
 
-## [Traverse Linked List](../lab6/5.c)
+## [Display the Complete Linked List using Recursive Function](../lab6/5.c)
 ```c
-
+        printf("%d ",temp->value);
+        if(temp->next==NULL)
+        {
+            return;
+        }
+        print_link_list(temp->next); 
 ```
 
-## [Linked List Output](../lab6/6.c)
+## [Display the Complete Linked List in Reverse Order](../lab6/6.c)
 ```c
-
+void reverse_list(Node *temp)
+{
+    if(temp==NULL)
+    {
+        printf("Empty List\n");
+        return;
+    }
+    else
+    {
+        if(temp==NULL)
+        {
+            return;
+        }
+        reverse_list(temp->next);
+        printf("%d ",temp->value);
+    }
+}
 ```
