@@ -47,7 +47,7 @@
 
 
 
-# Linked List Basic Operations (Single Way Linked List)
+# Linked List Basic Operations (Single Way)
 
 ## [Lab Assignment 6](lab6)
 * Create Link List
