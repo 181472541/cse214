@@ -44,3 +44,13 @@
   - Split
   - Updating Index
   - Cycally Permute
+
+### Linked List Basic Operations (Single Way Linked List)
+
+## [Lab Assignment 6](lab6)
+* Create Link List
+* Declare 
+* Initialize
+* Access
+* Traverse
+* Link List Output
