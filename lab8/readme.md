@@ -122,7 +122,7 @@ Node* delete_at(Node *temp, int pos)
 }
 ```
 
-## [Delete All / Clear Linked :ist](../lab8/5.c)
+## [Delete All / Clear Linked List](../lab8/5.c)
 ```c
 Node* clear(Node *temp)
 {
