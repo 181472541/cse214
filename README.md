@@ -66,3 +66,17 @@
 * Search Node Value
 * Reverse Link List
 * Merge Link List
+
+## [Lab Assignment 8](lab8)
+* Delete Back
+* Delete Front
+* Delete Value
+* Delete At
+* Delete All/Clear
+
+## [Lab Assignment 9](lab9)
+* Insert Front
+* Insert Back
+* Insert At
+* Insert Before
+* Insert After
