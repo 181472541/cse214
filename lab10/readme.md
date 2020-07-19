@@ -10,7 +10,7 @@
     Implementation of Doubly Linked List
 </h2>
 
-## Node Structure of Linked List
+## Structure of Linked List
 ```c
 typedef struct Node node;
 struct Node
