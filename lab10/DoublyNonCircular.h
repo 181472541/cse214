@@ -1,157 +1,225 @@
+/* Design a Double way non circular linked list */
+
 #include<stdio.h>
 #include<stdlib.h>
 
+// Structure Declare
 typedef struct Node node;
 struct Node
 {
     int value;
+    int data;
     node *next;
+    node *prev;
 };
+node *head = NULL;
 
-node* create_list();
+// Function Prototype
 void display_list(node *temp);
-node* push_front(node *temp, int key);
-node* push_back(node *temp, int key);
-node* pop_front(node *temp);
-node* pop_back(node *temp);
-node* clear(node *temp);
+void push_front();
+void push_back();
+void pop_front();
+void pop_back();
+void clear();
 int front(node *temp);
 int back(node *temp);
 void empty(node *temp);
 void size(node *temp);
 
-node* create_list()
-{
-    node *a, *b, *c, *d;
-
-    a = (node *) malloc(sizeof(node));
-    b = (node *) malloc(sizeof(node));
-    c = (node *) malloc(sizeof(node));
-    d = (node *) malloc(sizeof(node));
-
-    a->value = 1;
-    a->next = b;
-
-    b->value = 2;
-    b->next = c;
-
-    c->value = 3;
-    c->next = d;
-
-    d->value = 4;
-    d->next = NULL;
-
-    return a;
-}
-
+// Display Doubly Linked List
 void display_list(node *temp)
 {
-    if(temp==NULL)
+    node *new_node;
+    printf("Doubly Linked List: ");
+    new_node = head;
+    if(new_node==NULL)
     {
-        printf("List Empty\n");
-        return;
+        printf(">>> Empty <<<");
     }
-    while(temp!=NULL)
+    while(new_node != NULL)
     {
-        printf("%d ",temp->value);
-        temp = temp->next;
+        printf("%d ",new_node->data);
+        new_node=new_node->next;
     }
-    printf("\n");
 }
 
-
-node* push_front(node *temp, int key)
+// Insert Front
+void push_front()
 {
-    node *new_head;
-    new_head = (node*) malloc(sizeof(node));
-    new_head->value = key;
-    new_head->next = temp;
-    return new_head;
-}
-
-node* push_back(node *temp, int key)
-{
-    if (temp==NULL)
+    node *new_node;
+    int item;
+    new_node = (node *) malloc(sizeof(node));
+    if(new_node == NULL)
     {
-        node *new_head;
-        new_head = (node*) malloc(sizeof(node) );
-        new_head->value = key;
-        new_head->next = NULL;
-        return new_head;
-    }
-    node *head = temp, *new_node;
-    while(temp->next)
-    {
-        temp = temp->next;
-    }
-    new_node = (node*) malloc(sizeof(node));
-    new_node->value = key;
-    new_node->next = NULL;
-    temp->next = new_node;
-    return head;
-}
-
-node* pop_front(node *temp)
-{
-    if(temp)
-    {
-        node *new_head = NULL;
-        new_head = temp->next;
-        free(temp);
-        return new_head;
+        printf("OVERFLOW");
+        getchar();
+        printf("\nPress Enter to Continue");
+        getchar();
     }
     else
-        printf("Underflow Linked List");
-    return temp;
-}
-
-node* pop_back(node *temp)
-{
-    node *head = temp, *last;
-    if(temp)
     {
-        if (head->next!=NULL)
+        printf("Input Value to Push Front: ");
+        scanf("%d",&item);
+
+        if(head==NULL)
         {
-            while(temp->next)
-            {
-                last = temp;
-                temp = temp->next;
-            }
-            free(temp);
-            last->next = NULL;
+            new_node->next = NULL;
+            new_node->prev=NULL;
+            new_node->data=item;
+            head=new_node;
         }
         else
         {
-            free(temp) ;
-            head = NULL;
+            new_node->data=item;
+            new_node->prev=NULL;
+            new_node->next = head;
+            head->prev=new_node;
+            head=new_node;
         }
-        return head;
+        printf("\t\t\t>>> Front Node Inserted <<<\n");
+        getchar();
+        printf("\nPress Enter to Continue");
+        getchar();
+    }
+
+}
+
+// Insert Back
+void push_back()
+{
+    node *new_node,*temp;
+    int item;
+    new_node = (node *) malloc(sizeof(node));
+    if(new_node == NULL)
+    {
+        printf("OVERFLOW");
+        getchar();
+        printf("\nPress Enter to Continue");
+        getchar();
     }
     else
-        printf("Underflow Linked List");
-    return head;
+    {
+        printf("Input Value to Push Back: ");
+        scanf("%d",&item);
+        new_node->data=item;
+        if(head == NULL)
+        {
+            new_node->next = NULL;
+            new_node->prev = NULL;
+            head = new_node;
+        }
+        else
+        {
+            temp = head;
+            while(temp->next!=NULL)
+            {
+                temp = temp->next;
+            }
+            temp->next = new_node;
+            new_node ->prev=temp;
+            new_node->next = NULL;
+        }
+
+    }
+    printf("\t\t\t>>> Back Node Inserted <<<");
+    getchar();
+    printf("\nPress Enter to Continue");
+    getchar();
 }
 
-node* clear(node *temp)
+// Delete Front
+void pop_front()
 {
-    node *to_delete;
+    node *new_node;
+    if(head == NULL)
+    {
+        printf("UNDERFLOW");
+        getchar();
+        printf("\nPress Enter to Continue");
+        getchar();
+    }
+    else if(head->next == NULL)
+    {
+        head = NULL;
+        free(head);
+        printf("\t\t\t>>> Front Node Deleted <<<");
+        getchar();
+        printf("\nPress Enter to Continue");
+        getchar();
+    }
+    else
+    {
+        new_node = head;
+        head = head -> next;
+        head -> prev = NULL;
+        free(new_node);
+        printf("\t\t\t>>> Front Node Deleted <<<");
+        getchar();
+        printf("\nPress Enter to Continue");
+        getchar();
+    }
+
+}
+
+// Delete Back
+void pop_back()
+{
+    node *new_node=head, *prev;
+    if(head == NULL)
+    {
+        printf("UNDERFLOW");
+        getchar();
+        printf("\nPress Enter to Continue");
+        getchar();
+    }
+    else if(head->next == NULL)
+    {
+        head = NULL;
+        free(head);
+        printf("\t\t\t>>> Back Node Deleted <<<");
+        getchar();
+        printf("\nPress Enter to Continue");
+        getchar();
+    }
+    else
+    {
+        while(new_node->next!=NULL)
+        {
+            prev=new_node;
+            new_node=new_node->next;
+        }
+        prev->next=NULL;
+        free(new_node);
+        printf("\t\t\t>>> Back Node Deleted <<<");
+        getchar();
+        printf("\nPress Enter to Continue");
+        getchar();
+    }
+}
+
+// Delete all Node From Doubly Linked List
+void clear()
+{
+    node *list_delete;
+    node *temp = head;
     while(temp)
     {
-        to_delete = temp;
+        list_delete = temp;
         temp = temp->next;
-        free(to_delete);
+        free(list_delete);
     }
-    return NULL;
 }
 
+// Print Front or Head
 int front(node *temp)
 {
     if(temp!=NULL)
     {
-        return temp->value;
+        return temp->data;
     }
 }
 
+//Print Back or Tail
 int back(node *temp)
 {
     if(temp!=NULL)
@@ -160,18 +228,20 @@ int back(node *temp)
         {
             temp=temp->next;
         }
-        return temp->value;
+        return temp->data;
     }
 }
 
+// Check Doubly Linked List is Empty or Not Empty
 void empty(node *temp)
 {
     if(temp==NULL)
-        printf("Empty\n");
+        printf("\t\t>>> List are Empty <<<");
     else
-        printf("Not Empty\n");
+        printf("\t\t>>> List are Not Empty <<<");
 }
 
+// Print Doubly Linked List Size
 void size(node *temp)
 {
     int count = 0;
@@ -180,6 +250,5 @@ void size(node *temp)
         count++;
         temp = temp->next;
     }
-    printf("Size: %d\n", count);
+    printf("List Size: %d\n", count);
 }
-
