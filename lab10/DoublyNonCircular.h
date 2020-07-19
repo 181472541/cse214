@@ -6,16 +6,15 @@ struct Node
 {
     int value;
     node *next;
-    node *prev;
 };
 
 node* create_list();
 void display_list(node *temp);
-void push_front(node *temp, int key);
-void push_back(node *temp, int key);
-void pop_front(node *temp);
-void pop_back(node *temp);
-void clear(node *temp);
+node* push_front(node *temp, int key);
+node* push_back(node *temp, int key);
+node* pop_front(node *temp);
+node* pop_back(node *temp);
+node* clear(node *temp);
 int front(node *temp);
 int back(node *temp);
 void empty(node *temp);
@@ -61,96 +60,89 @@ void display_list(node *temp)
 }
 
 
-void push_front(node *temp, int key)
+node* push_front(node *temp, int key)
 {
-    node * new_head = (node*)malloc(sizeof(node));
-    new_head-> value = key;
+    node *new_head;
+    new_head = (node*) malloc(sizeof(node));
+    new_head->value = key;
     new_head->next = temp;
-    new_head->prev = NULL;
-    if (temp != NULL)
-        temp->prev = new_head;
-    temp = new_head;
+    return new_head;
 }
 
-void push_back(node *temp, int key)
+node* push_back(node *temp, int key)
 {
-node* new_node = (node*)malloc(sizeof(node));
-
-node* last = temp;
+    if (temp==NULL)
+    {
+        node *new_head;
+        new_head = (node*) malloc(sizeof(node) );
+        new_head->value = key;
+        new_head->next = NULL;
+        return new_head;
+    }
+    node *head = temp, *new_node;
+    while(temp->next)
+    {
+        temp = temp->next;
+    }
+    new_node = (node*) malloc(sizeof(node));
     new_node->value = key;
     new_node->next = NULL;
-    if ( temp == NULL) {
-        new_node->prev = NULL;
-        temp = new_node;
-       return;
-   }
-    while (last->next != NULL)
-     last = last->next;
-    last->next = new_node;
-    new_node->prev = last;
-return;
+    temp->next = new_node;
+    return head;
 }
 
-void pop_front(node *temp)
+node* pop_front(node *temp)
 {
-    node *new_head;
-    if(head == NULL)
+    if(temp)
     {
-        printf("\n UNDERFLOW");
-    }
-    else if(head->next == NULL)
-    {
-        head = NULL;
-        free(head);
-        printf("\nnode deleted\n");
+        node *new_head = NULL;
+        new_head = temp->next;
+        free(temp);
+        return new_head;
     }
     else
-    {
-        new_head = head;
-        head = head -> next;
-        head -> prev = NULL;
-        free(new_head);
-        printf("\nnode deleted\n");
-    }
+        printf("Underflow Linked List");
+    return temp;
 }
 
-void pop_back(node *temp)
+node* pop_back(node *temp)
 {
-    node *new_head;
-    if(head == NULL)
+    node *head = temp, *last;
+    if(temp)
     {
-        printf("\n UNDERFLOW\n");
-    }
-    else if(head->next == NULL)
-    {
-        head = NULL;
-        free(head);
-        printf("\nNode Deleted\n");
-    }
-    else
-    {
-        new_head = head;
-        if(new_head->next != NULL)
+        if (head->next!=NULL)
         {
-            new_head = new_head -> next;
+            while(temp->next)
+            {
+                last = temp;
+                temp = temp->next;
+            }
+            free(temp);
+            last->next = NULL;
         }
-        new_head -> prev -> next = NULL;
-        free(new_head);
-        printf("\nNode Deleted\n");
+        else
+        {
+            free(temp) ;
+            head = NULL;
+        }
+        return head;
     }
+    else
+        printf("Underflow Linked List");
+    return head;
 }
 
-void clear(node temp, node del)
-{if ( temp == NULL || del == NULL)
-return;
-    if (temp == del)
-       temp = del->next;
-    if (del->next != NULL)
-        del->next->prev = del->prev;
-    if (del->prev != NULL)
-        del->prev->next = del->next;
-    free(del);
-    return;}
+node* clear(node *temp)
+{
+    node *to_delete;
+    while(temp)
+    {
+        to_delete = temp;
+        temp = temp->next;
+        free(to_delete);
+    }
+    return NULL;
+}
 
 int front(node *temp)
 {
