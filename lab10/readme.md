@@ -1,7 +1,6 @@
-
-<div class="text-purple" align="center">
+<h1 class="text-purple" align="center">
     Design a Double Way Non Circular Linked List
-</div>
+</h1>
 
 ### [CLICK HERE For C File](../lab10/1.c)
 
