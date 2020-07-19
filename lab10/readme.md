@@ -1,6 +1,6 @@
-<h1 class="text-purple" align="center">
-    [Design a Double Way Non Circular Linked List](../lab10/1.c)
-</h1>
+<p align="center">
+    ## [Design a Double Way Non Circular Linked List](../lab10/1.c)
+</p>
 
 #### [CLICK HERE For C File](../lab10/1.c)
 
