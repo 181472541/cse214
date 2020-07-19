@@ -11,7 +11,7 @@ int main()
 {
     int op;
     node *head = NULL;
-    //head = create_list();
+    head = create_list();
     do
     {
         system("cls");
