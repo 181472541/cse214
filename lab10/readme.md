@@ -2,7 +2,7 @@
     Design a Double Way Non Circular Linked List
 </h1>
 
-#### [CLICK HERE For C File](../lab10/update.c)
+#### [CLICK HERE For C File](../lab10/Update.c)
 
 #### [CLICK HERE For Header File](../lab10/update_header_file.h)
 
