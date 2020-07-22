@@ -2,9 +2,9 @@
     Design a Double Way Non Circular Linked List
 </h1>
 
-#### [CLICK HERE For C File](../lab10/1.c)
+#### [CLICK HERE For C File](../lab10/update.c)
 
-#### [CLICK HERE For Header File](../lab10/DoublyNonCircular.h)
+#### [CLICK HERE For Header File](../lab10/update_header_file.h)
 
 <h2 align="center">
     Implementation of Doubly Linked List
