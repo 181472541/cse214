@@ -1,5 +1,3 @@
-# Data Structure CSE - 214
-
 <h1 align="center">
   Data Structure CSE - 214
 </h1>
