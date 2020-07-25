@@ -85,19 +85,15 @@
 
 ## [Double way Non-Circular Linked List 10](lab10)
 * Display
-  - Print Linked List
-* PUSH
-  - Push Front
-  - Push Back
-* POP
-  - Pop Front
-  - Pop Back
-  - Clear
-* Other Operations
-  - Head
-  - Tail
-  - Empty
-  - Size
-  - Front
-  - Back
+* Head
+* Tail
+* Empty
+* Size
+* Front
+* Back
+* Push Front
+* Push Back
+* Pop Front
+* Pop Back
+* Clear
 
