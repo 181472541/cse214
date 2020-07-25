@@ -1,5 +1,9 @@
 # Data Structure CSE - 214
 
+<h1 align="center">
+  Data Structure CSE - 214
+</h1>
+
 ## [Lab Assignment 1](lab1)
 * Array Declaretion 
 * Array Initializetion 
