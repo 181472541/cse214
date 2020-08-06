@@ -1,4 +1,9 @@
-/*(3) Update Kth (take input K from user) index with the value “X” (take input X from user),
+/**
+Name: Md Rabiul Islam Shaon
+ID: 181472541
+**/
+
+/*(3) Update Kth (take input K from user) index with the value â€œXâ€ (take input X from user),
     And print the whole array */
 
 #include <stdio.h>
