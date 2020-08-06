@@ -1,6 +1,11 @@
+/**
+Name: Md Rabiul Islam Shaon
+ID: 181472541
+**/
+
 /* (1) Write a C program that declare an integer array length of one hundred (100)
     (do not initialize the array). Scan values from user into an array until end of file.
-    Print entire array each element separated by space. Check Overflow, Use Function, Don’t use Pointer */
+    Print entire array each element separated by space. Check Overflow, Use Function, Donâ€™t use Pointer */
 
 #include<stdio.h>
 int CheckingOverflow(int tag);
