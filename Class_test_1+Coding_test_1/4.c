@@ -1,3 +1,8 @@
+/**
+Name: Md Rabiul Islam Shaon
+ID: 181472541
+**/
+
 /* (4) Copy the given array into another array. Access the array using pointer.*/
 #include <stdio.h>
 void PrintArray(int arr[], int size);
