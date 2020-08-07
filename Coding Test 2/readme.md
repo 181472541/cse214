@@ -6,9 +6,9 @@ CSE 214 Data Structure Laboratory - Coding Test 2<br/>
 Marks: 25  Duration: 3 Hour
 </h3>
 
-## [1. Academic Honesty.](../ Coding Test 2/1.c)
+## [1. Academic Honesty.](../Coding Test 2/1.c)
 
-## [2. Write the Following Program.](../ Coding Test 2/2.c)
+## [2. Write the Following Program.](../Coding Test 2/2.c)
 
 # Single Way Linked List
 * Inaert At
