@@ -11,7 +11,7 @@ Marks: 25  Duration: 3 Hour
 ## [2. Write the Following Program.](../Coding Test 2/2.c)
 
 # Single Way Linked List
-* Inaert At
+* Insert At
 * Delete Front
 * Copy Recursively
 * Merge Two List
